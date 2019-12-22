@@ -1,0 +1,81 @@
+<!--
+  Generated template for the HomePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+ 
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <div class="ion-text-center" >
+            <ion-searchbar searchIcon="calendar" ></ion-searchbar>
+          </div>
+        </ion-col>
+
+        <ion-col>
+          <div class="ion-text-end">
+            <ion-icon ios="ios-cart" md="md-cart"></ion-icon>
+          </div>
+        </ion-col>
+      </ion-row> 
+    </ion-grid> 
+    <!-- <div class="container">
+        <div class="row" >
+          <div class="col-sm-8" style="width:80%" >
+          
+              <ion-searchbar searchIcon="calendar" style="width:100%"></ion-searchbar>
+           
+          </div>
+          <div class="col-sm-2" style="width:10%" >
+          
+              <ion-icon ios="ios-cart" md="md-cart"></ion-icon>
+           
+          </div>
+       
+        </div>
+      </div> -->
+
+    <!--  -->
+
+  </ion-navbar>
+
+  <!--  -->
+  <ion-slides pager="true" (ionSlideDidChange)="slideChanged()" autoplay="500" loop="true" speed="500">
+    <ion-slide>
+      <img src="assets/imgs/slide6.jpg">
+
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/imgs/slide7.jpg">
+
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/imgs/slide7.jpg">
+
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/imgs/slide7.jpg">
+
+    </ion-slide>
+  </ion-slides>
+</ion-header>
+
+<ion-content padding>
+
+
+
+
+  <div class="container">
+    <div class="row" >
+      <div class="col-sm-6" class="cont" style="width:48%"  *ngFor="let category of CategoriesList"(click)="CategoryDetails(category.id)">
+        <img [src]="category.category_img" style="width: 100%">
+        <div class="centered">{{category.name}}</div>
+        <!-- <h1>hhh</h1> -->
+      </div>
+   
+    </div>
+  </div>
+</ion-content>

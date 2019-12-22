@@ -1,0 +1,47 @@
+page-home {
+
+}
+ion-icon
+{
+
+   margin-left: 85%;
+   margin-top: 20%;
+   color: black;
+  
+}
+ion-searchbar
+{
+    margin-top:  10%;
+   
+  
+}
+.ion-text-start
+{
+    width: 100%;
+}
+.searchbar-ios.searchbar-left-aligned .searchbar-search-icon
+{
+    margin-left: 60%;
+}
+.searchbar-md .searchbar-search-icon, .searchbar-md .searchbar-md-cancel
+{
+    margin-left: 80%;
+}
+.container {
+    position: relative;
+  }
+  
+  .cont {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin: 1%;
+    font-size: 13px;
+  }
+  
+  .centered {
+    position: absolute;
+    top: 70%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+  }
